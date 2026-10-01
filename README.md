@@ -33,7 +33,7 @@ to the account or organization's plugin policy.
 
 ```sh
 codex plugin marketplace add oguzhannsaritas/gateway-ai-plugin
-codex plugin list --marketplace connexease-gateway --available
+codex plugin list --json --marketplace connexease-gateway --available
 codex plugin add connexease-gateway-docs@connexease-gateway
 ```
 
@@ -69,12 +69,13 @@ The URLs in the skill are **entry points**, not a complete local copy or
 index of every documentation page. The assistant should follow official
 same-site navigation and check relevant content at question time.
 
-Before this GitHub publication, Claude Code manifest validation and a live
-read-only answer passed. Codex CLI local marketplace installation and a live
-read-only answer passed. Gemini CLI discovered the skill, but this test
+Claude Code and Codex CLI both installed the plugin from this GitHub repository.
+Their earlier local tests each produced one live, read-only documentation
+answer. Gemini CLI installed the skill from this repository, but this test
 machine's Google OAuth returned `UNSUPPORTED_CLIENT`, so a live Gemini CLI
-answer is not yet verified. ChatGPT desktop/web and repository-based installs
-still require separate end-to-end testing. See [distribution status](DISTRIBUTION.md).
+answer is not yet verified. ChatGPT desktop/web and Claude/Gemini chat
+installation still require separate end-to-end testing. See
+[distribution status](DISTRIBUTION.md).
 
 Only the files in this repository are distributed. The local test machine's
 temporary runtime, archives, and private Gemini Gem are not included.
