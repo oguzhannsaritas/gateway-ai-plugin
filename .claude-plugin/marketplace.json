@@ -1,0 +1,14 @@
+{
+  "name": "connexease-gateway",
+  "description": "Connexease Gateway documentation tools for Claude Code",
+  "owner": {
+    "name": "Connexease"
+  },
+  "plugins": [
+    {
+      "name": "connexease-gateway-docs",
+      "source": "./plugins/connexease-gateway-docs",
+      "description": "Read-only answers from the public Connexease Gateway documentation"
+    }
+  ]
+}
